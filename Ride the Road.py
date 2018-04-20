@@ -92,12 +92,10 @@ def draw_main_menu():
 # Setup the enemy cars
 cars = []
 car_count = 2
-min_space = 0
 for i in range(car_count):
-    x = random.randrange(min_space, 340)
+    x = random.randrange(0, 340)
     car = Car(x, random.randrange(-150, -50), 0, random.randint(5, 10), 60, 60, CAR_COLOR)
     cars.append(car)
-    min_space += cars[i].width + 20
 
 
 # Setup the stripes.
@@ -164,17 +162,14 @@ while not done:
         player.check_out_of_screen()
 
         # Check if the enemy cars move out of the screen.
-        offset = 0
         for i in range(car_count):
             cars[i].draw_rect()
             cars[i].y += cars[i].dy
             if cars[i].y > size[1]:
                 score += 10
-                x = random.randrange(offset, 340)
                 cars[i].y = random.randrange(-150, -50)
-                cars[i].x = random.randrange(x, 340)
+                cars[i].x = random.randrange(0, 340)
                 cars[i].dy = random.randint(4, 9)
-                offset += 100
 
         # Check the collision of the player with the car
         for i in range(car_count):
