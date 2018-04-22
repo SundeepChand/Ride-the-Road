@@ -1,5 +1,5 @@
 # Ride-the-Road
-A simple car game made with [Python-Pygame][http://www.pygame.org].
+A simple car game made with [Python-Pygame](http://www.pygame.org).
 
 ## To Play this game
 * Install Python 3.x from [here](https://www.python.org/downloads/releases)
@@ -10,4 +10,4 @@ A simple car game made with [Python-Pygame][http://www.pygame.org].
 
 ### Screenshot
 
-![Ride the Road](Screenshot.png)
+![Ride the Road](Screenshot.PNG)
