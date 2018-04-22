@@ -9,5 +9,5 @@ A simple car game made with [Python-Pygame][http://www.pygame.org].
 * Use <kbd>&larr;</kbd> and <kbd>&rarr;</kbd> to control the car.
 
 ### Screenshot
-### ----------
-![Ride the Road](screenshot.png)
+
+![Ride the Road](Screenshot.png)
